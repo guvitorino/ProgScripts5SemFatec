@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>The Best Oferta</title>  
+    <title>Login</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 								<a href="#" id="font-menu">Contato</a>
 							</li>
 							<li>
-								<a href="login.html" id="font-menu">Login</a>
+								<a href="#" id="font-menu">Login</a>
 							</li>
 						</ul>
 						<form class="navbar-form navbar-left" role="search">
@@ -56,26 +56,43 @@
 				</nav>
 			</div>
 		</div><br><br><br><br><br><br><br><br><br>
-		
-	    <div class="section section-info" style="margin-left:-15px; margin-right:device-width;">
-	      <div class="container" >
-	        <div class="row">
-	          <div class="col-md-8" style="color:#ecf0f1;background-color:#1A8BC8;border:2px white solid; padding:16px;">
-	            <h1>The Best Oferta</h1>
-	            <p class="lead">Se você esta a procura de ofertas em sua cidade, então veio ao lugar certo, aqui você pode encontrar ofertas de todos os tipos de estabelecimentos em sua região, ou se você possui um négocio, cadastra-se e comece a usufruir do site anunciando suas ofertas.
-	            <button type="button" class="btn btn-success btn-lg" id="btnhomecadastrar">Cadastrar</button></p>
-	          </div>
-	          <div class="col-md-1">&nbsp;&nbsp;&nbsp;&nbsp;</div>
-	          <div class="col-md-3" style="color:#ecf0f1;background-color:#1A8BC8;border:2px white solid; padding:5px;">
-	          	 <form action="verifica.php" method="post"> <center><h1>Entrar</h1></center>
-				  <br><input type="text" class="form-control" placeholder="Email" name="email">
-				  <br><input type="password" class="form-control" placeholder="Senha" name="senha">
-				 <center> <br> <button type="submit" class="btn btn-success btn-lg" >Entrar</button><br></center></form>
-	          </div>
-	        </div>
-	      </div>
-	    </div><br><br><br>
-    	<div class="row">
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-8" style="color:#ecf0f1;border:2px solid white; padding:80px;">
+				<form class="form-horizontal" role="form" action="verifica.php" method="post">
+					<center><h3>Entrar</h3></center>
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">
+							Email
+						</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail3" name="email">
+						</div>
+					</div>
+					<div class="form-group">
+						 
+						<label for="inputPassword3" class="col-sm-2 control-label">
+							Password
+						</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="inputPassword3" name="senha">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							 
+							<button type="submit" class="btn btn-success btn-lg">
+								Entrar
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2">
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-12">
 				<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"style="background:#34495e;">
 					<center class="footer">The Best Oferta © 2016<p>Gustavo Vitorino - <a href="http://hu3tech.blogspot.com.br/" class="footer">Hu3Tech
@@ -83,8 +100,6 @@
 				</nav>
 			</div>
 		</div>
-
-
 	</div>
 
     <script src="js/jquery.min.js"></script>

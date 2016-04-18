@@ -65,13 +65,13 @@
 			</div>
 		</div><br><br><br><br><br><br><br>
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-md-1">
 			</div>
 			<div class="col-md-8" style="padding: 20px;">
 				<h3 class="text-center">
 					Anunciar
 				</h3>
-				<form class="form-horizontal" role="form" id="cadastro"  action="inserirAnunciante.php" method="post">
+				<form class="form-horizontal" role="form" id="cadastro" method="post">
 					<div class="form-group">
 						 
 						<label for="txtnome" class="col-sm-2 control-label">
@@ -105,7 +105,8 @@
 							Senha
 						</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="txtsenha" name="senha">
+							<input type="password" class="form-control" id="txtsenha" name="senha"><br>
+							<span style="color:#C42924; display:none;" class="msgerrosenha">A senha deve ter no mínimo 6 caracteres</span>
 						</div>
 					</div>
 					<div class="form-group">
@@ -113,8 +114,9 @@
 							<div class="checkbox">
 								 
 								<label>
-									<input type="checkbox" /> <b>Li e Concordo com os <a href="#" style="text-decoration:none; color:green;">Termos e Condições de Uso</a>!
+									<input type="checkbox" id="chtermo"/> <b>Li e Concordo com os <a href="#" style="text-decoration:none; color:green;">Termos e Condições de Uso</a>!
 								</label>
+								<span style="color:#C42924; display:none;" class="msgtermo">Aceite o termo de uso!</span>
 							</div>
 						</div>
 					</div>
@@ -122,15 +124,26 @@
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
 							 
-							<button type="submit" class="btn btn-default">
+							<button type="submit" class="btn btn-default" id="btncadastra">
 								Cadastrar
 							</button>
+							<img id="load" src="img/general-loader.gif" style="width:50px;heigth:50px;display:none;"></img>
 							<span style="color:#C42924; display:none;" class="msgerro">Preencha todos os campos corretamente</span>
 						</div>
 					</div>
 				</form>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-3">
+				<table class="table table-bordered table-condesed" id="tabela">
+					<thead>
+						<tr>
+							<th> Nome </th>
+							<th> Email </th>
+							<th> Excluir </th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
 			</div>
 		</div>
 		<div class="row">

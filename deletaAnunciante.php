@@ -2,7 +2,7 @@
 	include "conectar.php";
 ?>
 <?php
-	$sql = 'DELETE from "Anunciante" where idanunciante='.$_COOKIE[id];  
+	$sql = 'DELETE from "Anunciante" where idanunciante='.$_POST[id];  
 	$sql_query = pg_query($conect,$sql) or die(pg_last_error($conect));
 	pg_close($conect); 
 	setcookie("nome", "", time()-3600);
